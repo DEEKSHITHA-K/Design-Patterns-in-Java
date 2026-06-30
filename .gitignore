@@ -1,0 +1,19 @@
+# Java build artifacts
+*.class
+**/*.class
+
+# Compiled package files
+*.jar
+*.war
+*.ear
+
+# IDE folders
+.vscode/
+.idea/
+
+# Virtual environment
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db

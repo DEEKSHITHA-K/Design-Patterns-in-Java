@@ -1,20 +1,19 @@
 # Chain of Responsibility Pattern
 
-## What this pattern solves
-Passes a request along a chain until one handler processes it.
+## What this code is doing
+A request moves through a chain of handlers. Each handler decides whether it can process the request or pass it along.
 
-## Why this example uses the pattern
-- The example keeps the core idea of the pattern visible and easy to understand.
-- The code is written in a simple Java form so you can map the pattern to real-world software design.
-- The main role of the pattern is shown through interfaces, inheritance, composition, or shared state.
+## Why this pattern is used
+Use this pattern when several handlers may be able to process a request and you want to avoid hard-coding the decision logic in one place.
 
-## Key points in the implementation
-- The classes and interfaces show the pattern clearly.
-- The example demonstrates the expected behavior of the pattern.
-- The client code uses the pattern in a way that would be natural in a real application.
+## Key Java ideas for beginners
+- `Handler` holds a reference to the next handler.
+- `canHandle()` decides whether this handler should process the request.
+- `handleRequest()` passes the request forward if needed.
 
-## Short study note
-If you are learning the pattern, focus on the intention first:
-- What problem is being solved?
-- Which object controls creation, behavior, or communication?
-- Why is the solution better than a simple direct implementation?
+## Real-life analogy
+It is like passing a task to the next suitable person until someone can complete it.
+
+
+## Difference from similar patterns
+Unlike Command, this pattern passes a request through a chain instead of wrapping one action as an object.

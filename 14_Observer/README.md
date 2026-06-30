@@ -1,20 +1,19 @@
 # Observer Pattern
 
-## What this pattern solves
-Notifies subscribers when the subject changes state.
+## What this code is doing
+The subject notifies multiple observers when something changes. In this example, email and SMS observers react to the same message.
 
-## Why this example uses the pattern
-- The example keeps the core idea of the pattern visible and easy to understand.
-- The code is written in a simple Java form so you can map the pattern to real-world software design.
-- The main role of the pattern is shown through interfaces, inheritance, composition, or shared state.
+## Why this pattern is used
+Use Observer when one object needs to inform many other objects about changes.
 
-## Key points in the implementation
-- The classes and interfaces show the pattern clearly.
-- The example demonstrates the expected behavior of the pattern.
-- The client code uses the pattern in a way that would be natural in a real application.
+## Key Java ideas for beginners
+- `Subject` keeps a list of observers.
+- `addObserver()` registers a new observer.
+- `notifyObservers()` sends updates to all registered observers.
 
-## Short study note
-If you are learning the pattern, focus on the intention first:
-- What problem is being solved?
-- Which object controls creation, behavior, or communication?
-- Why is the solution better than a simple direct implementation?
+## Real-life analogy
+It is like a group of friends receiving a message when one person sends an update.
+
+
+## Difference from similar patterns
+Unlike Mediator, this pattern is one-to-many; the subject sends updates to many observers.

@@ -1,20 +1,19 @@
 # Abstract Factory Pattern
 
-## What this pattern solves
-Creates families of related objects without coupling the client to a concrete platform.
+## What this code is doing
+This example creates a family of related objects, such as a button and a checkbox, for a specific platform like Windows or Mac.
 
-## Why this example uses the pattern
-- The example keeps the core idea of the pattern visible and easy to understand.
-- The code is written in a simple Java form so you can map the pattern to real-world software design.
-- The main role of the pattern is shown through interfaces, inheritance, composition, or shared state.
+## Why this pattern is used
+Use Abstract Factory when a group of objects must work together and should be created consistently for the same environment.
 
-## Key points in the implementation
-- The classes and interfaces show the pattern clearly.
-- The example demonstrates the expected behavior of the pattern.
-- The client code uses the pattern in a way that would be natural in a real application.
+## Key Java ideas for beginners
+- `Button` and `Checkbox` are product interfaces.
+- `WindowsFactory` and `MacFactory` create matching products.
+- The client code works with interfaces, not concrete classes.
 
-## Short study note
-If you are learning the pattern, focus on the intention first:
-- What problem is being solved?
-- Which object controls creation, behavior, or communication?
-- Why is the solution better than a simple direct implementation?
+## Real-life analogy
+This pattern is useful when a whole set of objects must match each other, like a Windows UI set or a Mac UI set.
+
+
+## Difference from similar patterns
+Unlike Factory Method, it creates a family of related objects together instead of one object by one object.

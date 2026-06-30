@@ -1,20 +1,19 @@
 # Adapter Pattern
 
-## What this pattern solves
-Converts one interface into another so incompatible components can work together.
+## What this code is doing
+The example lets an old component work with a new interface by placing an adapter between them.
 
-## Why this example uses the pattern
-- The example keeps the core idea of the pattern visible and easy to understand.
-- The code is written in a simple Java form so you can map the pattern to real-world software design.
-- The main role of the pattern is shown through interfaces, inheritance, composition, or shared state.
+## Why this pattern is used
+Use Adapter when two systems have incompatible interfaces but need to work together.
 
-## Key points in the implementation
-- The classes and interfaces show the pattern clearly.
-- The example demonstrates the expected behavior of the pattern.
-- The client code uses the pattern in a way that would be natural in a real application.
+## Key Java ideas for beginners
+- `PaymentProcessor` is the target interface.
+- `OldPaymentSystem` is the existing class with a different method.
+- `PaymentAdapter` converts the old method into the new expected method.
 
-## Short study note
-If you are learning the pattern, focus on the intention first:
-- What problem is being solved?
-- Which object controls creation, behavior, or communication?
-- Why is the solution better than a simple direct implementation?
+## Real-life analogy
+It is like using a power plug adapter so a device from one country works in another.
+
+
+## Difference from similar patterns
+Unlike Decorator, this pattern changes the interface so two incompatible components can work together.

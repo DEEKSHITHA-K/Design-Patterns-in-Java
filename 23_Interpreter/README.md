@@ -1,20 +1,19 @@
 # Interpreter Pattern
 
-## What this pattern solves
-Parses and evaluates sentences in a simple language using expression objects.
+## What this code is doing
+The example reads a simple expression language and evaluates whether a sentence matches some rules.
 
-## Why this example uses the pattern
-- The example keeps the core idea of the pattern visible and easy to understand.
-- The code is written in a simple Java form so you can map the pattern to real-world software design.
-- The main role of the pattern is shown through interfaces, inheritance, composition, or shared state.
+## Why this pattern is used
+Use Interpreter when you need to parse and evaluate a small language or rule-based expression.
 
-## Key points in the implementation
-- The classes and interfaces show the pattern clearly.
-- The example demonstrates the expected behavior of the pattern.
-- The client code uses the pattern in a way that would be natural in a real application.
+## Key Java ideas for beginners
+- `Expression` is the common interface.
+- `TerminalExpression` checks simple values.
+- `AndExpression` combines expressions.
 
-## Short study note
-If you are learning the pattern, focus on the intention first:
-- What problem is being solved?
-- Which object controls creation, behavior, or communication?
-- Why is the solution better than a simple direct implementation?
+## Real-life analogy
+It is like teaching the program to understand a tiny command language.
+
+
+## Difference from similar patterns
+Unlike Command, this pattern evaluates expressions or rules rather than simply executing an action.

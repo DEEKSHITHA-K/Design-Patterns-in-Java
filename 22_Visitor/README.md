@@ -1,20 +1,19 @@
 # Visitor Pattern
 
-## What this pattern solves
-Adds new operations to a set of classes without modifying those classes.
+## What this code is doing
+The visitor object performs an operation on different element types. The elements accept the visitor and let it handle their type.
 
-## Why this example uses the pattern
-- The example keeps the core idea of the pattern visible and easy to understand.
-- The code is written in a simple Java form so you can map the pattern to real-world software design.
-- The main role of the pattern is shown through interfaces, inheritance, composition, or shared state.
+## Why this pattern is used
+Use Visitor when new operations need to be added to a family of classes without changing those classes directly.
 
-## Key points in the implementation
-- The classes and interfaces show the pattern clearly.
-- The example demonstrates the expected behavior of the pattern.
-- The client code uses the pattern in a way that would be natural in a real application.
+## Key Java ideas for beginners
+- `Element` defines the `accept()` method.
+- `Visitor` defines operations for each element type.
+- `PriceVisitor` performs the new behavior.
 
-## Short study note
-If you are learning the pattern, focus on the intention first:
-- What problem is being solved?
-- Which object controls creation, behavior, or communication?
-- Why is the solution better than a simple direct implementation?
+## Real-life analogy
+It is like asking a specialist to inspect different objects without changing the objects themselves.
+
+
+## Difference from similar patterns
+Unlike Strategy, this pattern adds operations over a set of classes rather than selecting an algorithm.

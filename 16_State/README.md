@@ -1,20 +1,19 @@
 # State Pattern
 
-## What this pattern solves
-Changes an object's behavior by switching among state objects.
+## What this code is doing
+The object changes behavior depending on its current state. The same context can behave differently when it switches from one state to another.
 
-## Why this example uses the pattern
-- The example keeps the core idea of the pattern visible and easy to understand.
-- The code is written in a simple Java form so you can map the pattern to real-world software design.
-- The main role of the pattern is shown through interfaces, inheritance, composition, or shared state.
+## Why this pattern is used
+Use State when an object's behavior changes based on internal conditions and you want to keep the logic organized.
 
-## Key points in the implementation
-- The classes and interfaces show the pattern clearly.
-- The example demonstrates the expected behavior of the pattern.
-- The client code uses the pattern in a way that would be natural in a real application.
+## Key Java ideas for beginners
+- `State` is the interface for behaviors.
+- `StartState` and `StopState` are concrete states.
+- `Context` delegates behavior to the current state object.
 
-## Short study note
-If you are learning the pattern, focus on the intention first:
-- What problem is being solved?
-- Which object controls creation, behavior, or communication?
-- Why is the solution better than a simple direct implementation?
+## Real-life analogy
+It is like a traffic light changing its behavior depending on whether it is red, yellow, or green.
+
+
+## Difference from similar patterns
+Unlike Strategy, this pattern changes behavior based on the object's current state rather than swapping an algorithm.

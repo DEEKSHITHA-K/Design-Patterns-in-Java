@@ -1,20 +1,19 @@
 # Template Method Pattern
 
-## What this pattern solves
-Defines the skeleton of an algorithm and lets subclasses override the steps.
+## What this code is doing
+The base class defines the overall flow of an algorithm, while subclasses fill in the specific steps.
 
-## Why this example uses the pattern
-- The example keeps the core idea of the pattern visible and easy to understand.
-- The code is written in a simple Java form so you can map the pattern to real-world software design.
-- The main role of the pattern is shown through interfaces, inheritance, composition, or shared state.
+## Why this pattern is used
+Use Template Method when many classes share the same algorithm structure but differ in a few steps.
 
-## Key points in the implementation
-- The classes and interfaces show the pattern clearly.
-- The example demonstrates the expected behavior of the pattern.
-- The client code uses the pattern in a way that would be natural in a real application.
+## Key Java ideas for beginners
+- `Game` defines the method `play()` in a fixed order.
+- `start()` and `end()` are overridden by subclasses.
+- `final` prevents subclasses from changing the overall algorithm structure.
 
-## Short study note
-If you are learning the pattern, focus on the intention first:
-- What problem is being solved?
-- Which object controls creation, behavior, or communication?
-- Why is the solution better than a simple direct implementation?
+## Real-life analogy
+It is like using a worksheet with fixed sections, while each student fills in different answers.
+
+
+## Difference from similar patterns
+Unlike Strategy, this pattern fixes the overall algorithm structure and leaves only some steps flexible.

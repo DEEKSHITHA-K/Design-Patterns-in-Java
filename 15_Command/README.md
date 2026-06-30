@@ -1,20 +1,19 @@
 # Command Pattern
 
-## What this pattern solves
-Wraps actions in objects so they can be queued, stored, or executed later.
+## What this code is doing
+The code wraps actions such as turning a light on or off into objects. These objects can be stored and executed later.
 
-## Why this example uses the pattern
-- The example keeps the core idea of the pattern visible and easy to understand.
-- The code is written in a simple Java form so you can map the pattern to real-world software design.
-- The main role of the pattern is shown through interfaces, inheritance, composition, or shared state.
+## Why this pattern is used
+Use Command when you want to separate the request from the action, or when you need to queue, undo, or log commands.
 
-## Key points in the implementation
-- The classes and interfaces show the pattern clearly.
-- The example demonstrates the expected behavior of the pattern.
-- The client code uses the pattern in a way that would be natural in a real application.
+## Key Java ideas for beginners
+- `Command` is the interface for an action.
+- `LightOnCommand` and `LightOffCommand` are concrete commands.
+- `RemoteControl` executes the command without knowing the details.
 
-## Short study note
-If you are learning the pattern, focus on the intention first:
-- What problem is being solved?
-- Which object controls creation, behavior, or communication?
-- Why is the solution better than a simple direct implementation?
+## Real-life analogy
+It is like sending a request to a helper who knows how to carry out the task.
+
+
+## Difference from similar patterns
+Unlike Strategy, this pattern wraps a request as an object that can be queued or undone.

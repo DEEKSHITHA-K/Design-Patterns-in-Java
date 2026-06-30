@@ -1,20 +1,19 @@
 # Prototype Pattern
 
-## What this pattern solves
-Clones an existing object instead of constructing a new one from scratch.
+## What this code is doing
+This example creates a copy of an existing object using cloning instead of building the object from scratch.
 
-## Why this example uses the pattern
-- The example keeps the core idea of the pattern visible and easy to understand.
-- The code is written in a simple Java form so you can map the pattern to real-world software design.
-- The main role of the pattern is shown through interfaces, inheritance, composition, or shared state.
+## Why this pattern is used
+Use Prototype when creating a new object is expensive or when many objects are similar.
 
-## Key points in the implementation
-- The classes and interfaces show the pattern clearly.
-- The example demonstrates the expected behavior of the pattern.
-- The client code uses the pattern in a way that would be natural in a real application.
+## Key Java ideas for beginners
+- `Cloneable` tells Java that the object can be cloned.
+- `super.clone()` creates a copy.
+- `cloneDocument()` wraps the cloning logic in a simple method.
 
-## Short study note
-If you are learning the pattern, focus on the intention first:
-- What problem is being solved?
-- Which object controls creation, behavior, or communication?
-- Why is the solution better than a simple direct implementation?
+## Real-life analogy
+It is like copying a ready-made document template instead of rewriting everything from zero.
+
+
+## Difference from similar patterns
+Unlike Builder, this pattern creates objects by cloning an existing one rather than assembling them step by step.

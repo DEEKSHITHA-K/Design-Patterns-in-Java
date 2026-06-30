@@ -1,20 +1,19 @@
 # Builder Pattern
 
-## What this pattern solves
-Builds complex objects step by step using a fluent builder API.
+## What this code is doing
+The code builds a complex object step by step. Instead of passing many constructor parameters, the builder helps set values one by one.
 
-## Why this example uses the pattern
-- The example keeps the core idea of the pattern visible and easy to understand.
-- The code is written in a simple Java form so you can map the pattern to real-world software design.
-- The main role of the pattern is shown through interfaces, inheritance, composition, or shared state.
+## Why this pattern is used
+Use Builder when an object has many optional fields or when the construction logic is long and confusing.
 
-## Key points in the implementation
-- The classes and interfaces show the pattern clearly.
-- The example demonstrates the expected behavior of the pattern.
-- The client code uses the pattern in a way that would be natural in a real application.
+## Key Java ideas for beginners
+- `User.Builder` collects values gradually.
+- Each setter method returns the builder itself, so methods can be chained.
+- `build()` creates the final object.
 
-## Short study note
-If you are learning the pattern, focus on the intention first:
-- What problem is being solved?
-- Which object controls creation, behavior, or communication?
-- Why is the solution better than a simple direct implementation?
+## Real-life analogy
+It is like assembling a custom pizza one topping at a time instead of trying to fit everything into one giant constructor.
+
+
+## Difference from similar patterns
+Unlike Factory Method, this pattern focuses on constructing a complex object with many options.

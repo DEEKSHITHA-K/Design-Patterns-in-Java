@@ -1,20 +1,19 @@
 # Bridge Pattern
 
-## What this pattern solves
-Separates abstraction from implementation so both can vary independently.
+## What this code is doing
+The code separates the abstraction from the implementation. A remote control can work with different devices such as a TV or radio.
 
-## Why this example uses the pattern
-- The example keeps the core idea of the pattern visible and easy to understand.
-- The code is written in a simple Java form so you can map the pattern to real-world software design.
-- The main role of the pattern is shown through interfaces, inheritance, composition, or shared state.
+## Why this pattern is used
+Use Bridge when you want to avoid a permanent connection between an abstraction and one specific implementation.
 
-## Key points in the implementation
-- The classes and interfaces show the pattern clearly.
-- The example demonstrates the expected behavior of the pattern.
-- The client code uses the pattern in a way that would be natural in a real application.
+## Key Java ideas for beginners
+- `Device` is the implementation interface.
+- `Remote` is the abstraction.
+- The remote holds a device object and uses it indirectly.
 
-## Short study note
-If you are learning the pattern, focus on the intention first:
-- What problem is being solved?
-- Which object controls creation, behavior, or communication?
-- Why is the solution better than a simple direct implementation?
+## Real-life analogy
+It is like having a universal remote that can work with many kinds of devices.
+
+
+## Difference from similar patterns
+Unlike Adapter, this pattern separates abstraction from implementation so both can evolve independently.

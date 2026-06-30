@@ -1,20 +1,19 @@
 # Flyweight Pattern
 
-## What this pattern solves
-Shares common state among many objects to reduce memory usage.
+## What this code is doing
+The example reuses shared objects instead of creating new ones every time. This helps when many objects share the same basic data.
 
-## Why this example uses the pattern
-- The example keeps the core idea of the pattern visible and easy to understand.
-- The code is written in a simple Java form so you can map the pattern to real-world software design.
-- The main role of the pattern is shown through interfaces, inheritance, composition, or shared state.
+## Why this pattern is used
+Use Flyweight to save memory when many similar objects are created.
 
-## Key points in the implementation
-- The classes and interfaces show the pattern clearly.
-- The example demonstrates the expected behavior of the pattern.
-- The client code uses the pattern in a way that would be natural in a real application.
+## Key Java ideas for beginners
+- `CharacterFlyweight` stores the shared state.
+- `CharacterFactory` creates and reuses objects.
+- The same character object is returned for repeated requests.
 
-## Short study note
-If you are learning the pattern, focus on the intention first:
-- What problem is being solved?
-- Which object controls creation, behavior, or communication?
-- Why is the solution better than a simple direct implementation?
+## Real-life analogy
+It is like reusing the same letter tile in a game instead of creating a new one every time.
+
+
+## Difference from similar patterns
+Unlike Singleton, this pattern shares data among many objects, while Singleton shares one object globally.

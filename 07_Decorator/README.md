@@ -1,20 +1,19 @@
 # Decorator Pattern
 
-## What this pattern solves
-Adds responsibilities dynamically by wrapping an object with decorators.
+## What this code is doing
+The code adds extra behavior to an object dynamically by wrapping it in decorators such as milk or sugar.
 
-## Why this example uses the pattern
-- The example keeps the core idea of the pattern visible and easy to understand.
-- The code is written in a simple Java form so you can map the pattern to real-world software design.
-- The main role of the pattern is shown through interfaces, inheritance, composition, or shared state.
+## Why this pattern is used
+Use Decorator when you want to add features to an object without changing its original class.
 
-## Key points in the implementation
-- The classes and interfaces show the pattern clearly.
-- The example demonstrates the expected behavior of the pattern.
-- The client code uses the pattern in a way that would be natural in a real application.
+## Key Java ideas for beginners
+- The base interface is `Coffee`.
+- `CoffeeDecorator` wraps another coffee object.
+- Each decorator adds new behavior and calls the wrapped object.
 
-## Short study note
-If you are learning the pattern, focus on the intention first:
-- What problem is being solved?
-- Which object controls creation, behavior, or communication?
-- Why is the solution better than a simple direct implementation?
+## Real-life analogy
+It is like adding toppings to a basic pizza without rewriting the whole pizza class.
+
+
+## Difference from similar patterns
+Unlike Proxy, this pattern adds behavior rather than controlling access to an object.
